@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">CS Scanner</string>
+    <string name="cs_meeting">ABC Scanner</string>
+    <string name="button_text">CAPTURE IMAGE</string>
+    <string name="cs_bookmark">ADD cs BOOKMARK</string>
+    <string name="date">yyyyMMdd_HHmmss</string>
+    <string name="save_text">SAVE IN GALLERY</string>
+    <string name="tagtext">Add watermarks effortlessly</string>
+</resources>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:ndroid="http://schemas.android.com/tools"
+    android:id="@+id/menu_relative"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/Black">
+
+    <ImageView
+        android:id="@+id/image_menu"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="10dp"
+        android:layout_above="@id/cs"
+        app:srcCompat="@color/Black" />
+
+    <ImageView
+        android:id="@+id/cs"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_above="@+id/save_button"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="34dp"
+        android:clickable="true"
+        android:onClick="new_activity1"
+        android:rotation="90"
+        app:srcCompat="@drawable/cs" />
+
+    <ImageView
+        android:id="@+id/google"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignEnd="@+id/save_button"
+        android:layout_alignRight="@+id/save_button"
+        android:layout_alignTop="@+id/java"
+        app:srcCompat="@drawable/googleg_standard_color_128dp"
+        android:clickable="true"
+        ndroid:rotation="90"
+        android:onClick="new_activity3"/>
+
+    <ImageView
+        android:id="@+id/oracle"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/google"
+        android:layout_marginEnd="26dp"
+        android:layout_marginRight="26dp"
+        app:srcCompat="@drawable/google"
+        android:clickable="true"
+        ndroid:rotation="90"
+        android:onClick="new_activity4"/>
+
+    <ImageView
+        android:id="@+id/java"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignLeft="@+id/save_button"
+        android:layout_alignStart="@+id/save_button"
+        android:layout_below="@+id/image_menu"
+        android:clickable="true"
+        android:onClick="new_activity2"
+        ndroid:rotation="0"
+        app:srcCompat="@drawable/images" />
+
+    <Button
+        android:id="@+id/save_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:onClick="save"
+        android:text="@string/save_text" />
+
+</RelativeLayout>
